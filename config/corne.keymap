@@ -75,34 +75,14 @@
     combos {
         compatible = "zmk,combos";
 
-        underscore_left {
-            bindings = <&kp UNDER>;
-            key-positions = <38 40>;
-        };
-
-        underscore_right {
-            bindings = <&kp UNDER>;
-            key-positions = <39 37>;
-        };
-
-        delete_left {
-            bindings = <&kp DEL>;
-            key-positions = <24 37 11>;
-        };
-
-        delete_right {
-            bindings = <&kp DEL>;
-            key-positions = <40 35 11>;
-        };
-
         nav_prev {
             bindings = <&m_prev>;
-            key-positions = <18 40 36>;
+            key-positions = <31 32>;
         };
 
         nav_next {
             bindings = <&m_next>;
-            key-positions = <21 40 36>;
+            key-positions = <34 33>;
         };
     };
 
@@ -120,19 +100,19 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6            &kp N7             &kp N8     &kp N9     &kp N0  &kp BACKSPACE
-   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL         &trans
-   &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans     &trans     &trans         &trans
-                           &trans  &trans  &trans  &trans            &trans             &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5     &kp N6            &kp N7             &kp N8     &kp N9     &kp N0  &kp BACKSPACE
+   &trans  &trans  &trans  &trans  &trans     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL         &trans
+   &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans             &trans     &trans     &trans         &trans
+                           &trans  &trans  &kp UNDER  &kp UNDER            &trans             &trans
             >;
         };
 
         upper_layer {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7  &kp N8     &kp N9  &kp N0  &kp BACKSPACE
-   &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans         &trans
-   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans         &trans
-                           &trans  &trans  &trans    &trans    &trans  &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5     &kp N6    &kp N7  &kp N8     &kp N9  &kp N0  &kp DEL
+   &trans  &trans  &trans  &trans  &trans     &trans   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
+   &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans     &trans  &trans   &trans
+                           &trans  &trans  &kp UNDER  &kp UNDER    &trans  &trans
             >;
         };
 
