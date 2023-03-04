@@ -7,7 +7,20 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define LYR_DEFAULT 0
+#define LYR_LOWER 1
+#define LYR_UPPER 2
+#define LYR_SYSTEM 3
+
 / {
+	conditional_layers {
+			compatible = "zmk,conditional-layers";
+			system_layer {
+					if-layers = <LYR_LOWER LYR_UPPER>;
+					then-layer = <LYR_SYSTEM>;
+			};
+	};
+
     macros {
         m_next: m_next {
             label = "M_NEXT";
