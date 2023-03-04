@@ -9,6 +9,64 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+	macros {
+			m_next: m_next {
+					label = "M_NEXT";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings
+						= <&macro_press &kp RC(TAB)>
+						, <&macro_release &kp RC(TAB)>
+						;
+			};
+
+			m_prev: m_prev {
+					label = "M_PREV";
+					compatible = "zmk,behavior-macro";
+					#binding-cells = <0>;
+					bindings
+						= <&macro_press &kp LC(LS(TAB))>
+						, <&macro_release &kp LC(LS(TAB))>
+						;
+			};
+	};
+
+	behaviors {
+			gqt: global-quick-tap {
+					compatible = "zmk,behavior-hold-tap";
+					label = "GLOBAL_QUICK_TAP";
+					#binding-cells = <2>;
+					flavor = "hold-preferred";
+					tapping-term-ms = <350>;
+					quick-tap-ms = <200>;
+					global-quick-tap;
+					bindings = <&kp>, <&kp>;
+			};
+
+			gqtr: global-quick-tap-retro {
+					compatible = "zmk,behavior-hold-tap";
+					label = "GLOBAL_QUICK_TAP";
+					#binding-cells = <2>;
+					flavor = "hold-preferred";
+					tapping-term-ms = <350>;
+					quick-tap-ms = <200>;
+					global-quick-tap;
+					retro-tap;
+					bindings = <&kp>, <&kp>;
+			};
+
+			mtq: mod-tap-quick {
+					compatible = "zmk,behavior-hold-tap";
+					label = "MOD_TAP_QUICK";
+					#binding-cells = <2>;
+					flavor = "hold-preferred";
+					tapping-term-ms = <350>;
+					quick-tap-ms = <200>;
+					bindings = <&kp>, <&kp>;
+					retro-tap;
+			};
+	};
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -39,7 +97,7 @@
                         >;
                 };
 
-                raise_layer {
+                upper_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
