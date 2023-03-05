@@ -149,7 +149,6 @@
                                &trans    &trans     &trans     &trans    &trans    &trans
             >;
         };
-    };
 
     system_layer {
         bindings = <
