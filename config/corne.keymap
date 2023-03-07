@@ -188,11 +188,6 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <38 40>;
         };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <40 22>;
-        };
     };
 
     keymap {
@@ -218,9 +213,9 @@
 
         upper_layer {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4      &kp N5    &kp N6    &kp N7  &kp N8     &kp N9  &kp N0  &trans
-   &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans  &trans     &trans  &trans  &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4      &kp N5    &kp N6    &kp N7  &kp N8     &kp N9     &kp N0  &trans
+   &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER  &trans
+   &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans  &trans     &trans     &trans  &trans
                            &trans  &trans  &kp DELETE    &trans    &trans  &trans
             >;
         };
