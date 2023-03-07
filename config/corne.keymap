@@ -15,6 +15,10 @@
 #define LYR_SYSTEM 4
 
 / {
+    &caps_word {
+        continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -90,6 +94,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_MODS";
             #binding-cells = <0>;
+            tapping-term-ms = <350>;
             bindings =
                 <&kp LGUI>,
                 <&kp LCTRL>,
@@ -99,15 +104,26 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_MODS";
             #binding-cells = <0>;
+            tapping-term-ms = <350>;
             bindings =
                 <&kp RGUI>,
                 <&kp RCTRL>,
                 <&kp RALT>;
         };
+        dn_lyr_tap: dn-lyr-tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DN_LYR_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings =
+                <&mo 1>,
+                <&mo 3>;
+        };
         up_lyr_tap: up-lyr-tap {
             compatible = "zmk,behavior-tap-dance";
             label = "UP_LYR_TAP";
             #binding-cells = <0>;
+            tapping-term-ms = <350>;
             bindings =
                 <&mo 2>,
                 <&mo 3>;
@@ -116,6 +132,11 @@
 
     combos {
         compatible = "zmk,combos";
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <38 39>;
+        };
 
         nav_prev {
             bindings = <&m_prev>;
@@ -135,11 +156,6 @@
         vol_up {
             bindings = <&kp C_VOL_UP>;
             key-positions = <16 36>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <38 39>;
         };
 
         play_pause {
