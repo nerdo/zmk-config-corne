@@ -86,6 +86,32 @@
 
             retro-tap;
         };
+        left_mods: left-mods {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LEFT_MODS";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LGUI>,
+                <&kp LCTRL>,
+                <&kp LALT>;
+        };
+        right_mods: right-mods {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_MODS";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RGUI>,
+                <&kp RCTRL>,
+                <&kp RALT>;
+        };
+        up_lyr_tap: up-lyr-tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UP_LYR_TAP";
+            #binding-cells = <0>;
+            bindings =
+                <&mo 2>,
+                <&mo 3>;
+        };
     };
 
     combos {
@@ -93,32 +119,22 @@
 
         nav_prev {
             bindings = <&m_prev>;
-            key-positions = <31 32>;
+            key-positions = <19 41>;
         };
 
         nav_next {
             bindings = <&m_next>;
-            key-positions = <34 33>;
-        };
-
-        left_gui {
-            bindings = <&kp LGUI>;
-            key-positions = <14 15>;
-        };
-
-        right_gui {
-            bindings = <&kp RGUI>;
-            key-positions = <21 20>;
+            key-positions = <20 41>;
         };
 
         vol_down {
             bindings = <&kp C_VOL_DN>;
-            key-positions = <7 8>;
+            key-positions = <15 36>;
         };
 
         vol_up {
             bindings = <&kp C_VOL_UP>;
-            key-positions = <9 10>;
+            key-positions = <16 36>;
         };
 
         underscore {
@@ -126,49 +142,9 @@
             key-positions = <38 39>;
         };
 
-        left_ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <16 15>;
-        };
-
-        right_ctrl {
-            bindings = <&kp RCTRL>;
-            key-positions = <20 19>;
-        };
-
         play_pause {
             bindings = <&kp C_PLAY_PAUSE>;
-            key-positions = <39 40>;
-        };
-
-        left_alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <13 14>;
-        };
-
-        right_alt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <21 22>;
-        };
-
-        left_shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <16 37>;
-        };
-
-        right_shift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <19 40>;
-        };
-
-        left_symbol_layer {
-            bindings = <&mo 3>;
-            key-positions = <37 15>;
-        };
-
-        right_symbol_layer {
-            bindings = <&mo 3>;
-            key-positions = <20 40>;
+            key-positions = <13 36>;
         };
     };
 
@@ -177,10 +153,10 @@
 
         default_layer {
             bindings = <
-&kp GRAVE  &kp Q  &kp W   &kp E  &kp R          &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BACKSLASH
-  &kp TAB  &kp A  &kp S   &kp D  &kp F          &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI       &kp APOS
-  &kp ESC  &kp Z  &kp X   &kp C  &kp V          &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH      &kp ENTER
-                         &trans  &mo 1  &kp BACKSPACE  &kp SPACE  &mo 2     &trans
+  &kp TAB  &kp Q  &kp W       &kp E  &kp R          &kp T      &kp Y        &kp U        &kp I    &kp O     &kp P    &kp BACKSLASH
+  &kp ESC  &kp A  &kp S       &kp D  &kp F          &kp G      &kp H        &kp J        &kp K    &kp L  &kp SEMI         &kp APOS
+&kp LSHFT  &kp Z  &kp X       &kp C  &kp V          &kp B      &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mtq RSHIFT RET
+                         &left_mods  &mo 1  &kp BACKSPACE  &kp SPACE  &up_lyr_tap  &right_mods
             >;
         };
 
