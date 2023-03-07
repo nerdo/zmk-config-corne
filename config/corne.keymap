@@ -128,13 +128,24 @@
                 <&mo 2>,
                 <&mo 3>;
         };
-        shift_caps: shift-caps {
+        sh_sym_caps: sh-sym-caps {
             compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_CAPS";
+            label = "SH_SYM_CAPS";
             #binding-cells = <0>;
             bindings =
                 <&kp LSHIFT>,
+                <&mo 3>,
                 <&caps_word>;
+
+            tapping-term-ms = <350>;
+        };
+        sh_sym: sh-sym {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SH_SYM";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RSHIFT>,
+                <&mo 3>;
 
             tapping-term-ms = <350>;
         };
@@ -177,6 +188,11 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <38 40>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <40 22>;
+        };
     };
 
     keymap {
@@ -184,10 +200,10 @@
 
         default_layer {
             bindings = <
-    &kp TAB  &kp Q  &kp W       &kp E        &kp R          &kp T      &kp Y        &kp U        &kp I    &kp O     &kp P    &kp BACKSLASH
-    &kp ESC  &kp A  &kp S       &kp D        &kp F          &kp G      &kp H        &kp J        &kp K    &kp L  &kp SEMI         &kp APOS
-&shift_caps  &kp Z  &kp X       &kp C        &kp V          &kp B      &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mtq RSHIFT RET
-                           &left_mods  &dn_lyr_tap  &kp BACKSPACE  &kp SPACE  &up_lyr_tap  &right_mods
+     &kp TAB  &kp Q  &kp W       &kp E        &kp R          &kp T      &kp Y        &kp U        &kp I    &kp O     &kp P  &kp BACKSLASH
+     &kp ESC  &kp A  &kp S       &kp D        &kp F          &kp G      &kp H        &kp J        &kp K    &kp L  &kp SEMI       &kp APOS
+&sh_sym_caps  &kp Z  &kp X       &kp C        &kp V          &kp B      &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH        &sh_sym
+                            &left_mods  &dn_lyr_tap  &kp BACKSPACE  &kp SPACE  &up_lyr_tap  &right_mods
             >;
         };
 
