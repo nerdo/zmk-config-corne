@@ -14,11 +14,11 @@
 #define LYR_SYMBOL 3
 #define LYR_SYSTEM 4
 
-/ {
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
-    };
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+};
 
+/ {
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
