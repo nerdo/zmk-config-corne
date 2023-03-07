@@ -174,7 +174,7 @@
         };
 
         opt_bksp {
-            bindings = <&trans>;
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <38 40>;
         };
     };
