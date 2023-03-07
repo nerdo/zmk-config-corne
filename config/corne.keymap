@@ -172,6 +172,11 @@
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <13 36>;
         };
+
+        opt_bksp {
+            bindings = <&trans>;
+            key-positions = <38 40>;
+        };
     };
 
     keymap {
