@@ -128,15 +128,24 @@
                 <&mo 2>,
                 <&mo 3>;
         };
-        sh_caps: sh-caps {
+        rsh_caps_word: rsh_caps_word {
             compatible = "zmk,behavior-tap-dance";
-            label = "SH_CAPS";
+            label = "RSH_CAPS_WORD";
             #binding-cells = <0>;
             bindings =
-                <&kp LSHIFT>,
+                <&kp RSHIFT>,
                 <&caps_word>;
 
             tapping-term-ms = <350>;
+        };
+        lsh_caps: lsh_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LSH_CAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings =
+                <&kp LSHIFT>,
+                <&kp CAPS>;
         };
     };
 
@@ -174,10 +183,10 @@
 
         default_layer {
             bindings = <
- &kp TAB  &kp Q  &kp W       &kp E        &kp R          &kp T      &kp Y        &kp U        &kp I    &kp O     &kp P  &kp BACKSLASH
- &kp ESC  &kp A  &kp S       &kp D        &kp F          &kp G      &kp H        &kp J        &kp K    &kp L  &kp SEMI       &kp APOS
-&sh_caps  &kp Z  &kp X       &kp C        &kp V          &kp B      &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH     &kp RSHIFT
-                        &left_mods  &dn_lyr_tap  &kp BACKSPACE  &kp SPACE  &up_lyr_tap  &right_mods
+  &kp TAB  &kp Q  &kp W       &kp E        &kp R          &kp T      &kp Y        &kp U        &kp I    &kp O     &kp P   &kp BACKSLASH
+  &kp ESC  &kp A  &kp S       &kp D        &kp F          &kp G      &kp H        &kp J        &kp K    &kp L  &kp SEMI        &kp APOS
+&lsh_caps  &kp Z  &kp X       &kp C        &kp V          &kp B      &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH  &rsh_caps_word
+                         &left_mods  &dn_lyr_tap  &kp BACKSPACE  &kp SPACE  &up_lyr_tap  &right_mods
             >;
         };
 
