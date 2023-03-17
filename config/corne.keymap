@@ -167,9 +167,9 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE        &kp N1        &kp N2    &kp N3     &kp N4     &kp N5     &kp N6            &kp N7             &kp N8     &kp N9     &kp N0     &kp DEL
-  &kp ESC  &kp C_VOL_DN  &kp C_VOL_UP   &m_prev    &m_next     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL      &trans
- &kp CAPS        &trans      &kp LGUI  &kp LALT  &kp LCTRL     &trans     &trans            &trans             &trans     &trans     &trans  &caps_word
+&kp GRAVE        &kp N1        &kp N2    &kp N3     &kp N4     &kp N5     &kp N6            &kp N7             &kp N8     &kp N9     &kp N0  &kp DEL
+  &kp ESC  &kp C_VOL_DN  &kp C_VOL_UP   &m_prev    &m_next     &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL   &trans
+   &trans        &trans      &kp LGUI  &kp LALT  &kp LCTRL     &trans     &trans            &trans             &trans     &trans     &trans   &trans
                                          &trans     &trans  &kp UNDER  &kp UNDER            &trans             &trans
             >;
         };
@@ -178,7 +178,7 @@
             bindings = <
 &kp TILDE  &kp EXCL  &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT  &kp CARET   &kp AMPS  &kp ASTERISK   &kp LPAR   &kp RPAR  &kp BACKSPACE
   &kp ESC    &trans  &trans     &trans      &trans       &trans   &kp LEFT   &kp DOWN        &kp UP  &kp RIGHT  &kp ENTER         &trans
- &kp CAPS    &trans  &trans     &trans      &trans       &trans     &trans  &kp RCTRL      &kp RALT   &kp RGUI     &trans     &caps_word
+   &trans    &trans  &trans     &trans      &trans       &trans     &trans  &kp RCTRL      &kp RALT   &kp RGUI     &trans         &trans
                                 &trans      &trans    &kp UNDER  &kp UNDER     &trans        &trans
             >;
         };
@@ -194,10 +194,10 @@
 
         system_layer {
             bindings = <
-&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10      &trans
-&trans       &kp F11       &kp F12       &kp F13       &kp F14       &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20      &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans   &trans   &trans   &trans   &trans  &bt BT_CLR
-                                          &trans        &trans        &trans   &trans   &trans   &trans
+  &trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10      &trans
+  &trans       &kp F11       &kp F12       &kp F13       &kp F14       &kp F15  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20      &trans
+&kp CAPS  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans   &trans   &trans   &trans   &trans  &caps_word
+                                            &trans        &trans    &bt BT_CLR   &trans   &trans   &trans
             >;
         };
     };
