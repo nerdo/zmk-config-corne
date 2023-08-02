@@ -51,13 +51,21 @@
     };
 
     behaviors {
-        lower_layer_f24_tap_dance: lower_layer_f24_tap_dance {
+        lower_layer_f18_tap_dance: lower_layer_f18_tap_dance {
             compatible = "zmk,behavior-tap-dance";
-            label = "LOWER_LAYER_F24_TAP_DANCE";
+            label = "LOWER_LAYER_F18_TAP_DANCE";
             #binding-cells = <0>;
             bindings =
                 <&mo 1>,
-                <&kp F24>;
+                <&kp F18>;
+        };
+        upper_layer_f19_tap_dance: upper_layer_f19_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UPPER_LAYER_F19_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings =
+                <&mo 2>,
+                <&kp F19>;
         };
     };
 
@@ -66,10 +74,10 @@
 
         default_layer {
             bindings = <
-  &kp TAB  &kp Q  &kp W     &kp E                       &kp R      &kp T        &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BACKSLASH
- &kp LALT  &kp A  &kp S     &kp D                       &kp F      &kp G        &kp H  &kp J      &kp K    &kp L  &kp SEMI       &kp APOS
-&kp LSHFT  &kp Z  &kp X     &kp C                       &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH      &kp RSHFT
-                         &kp LGUI  &lower_layer_f24_tap_dance  &kp LCTRL    &kp SPACE  &mo 2   &kp RGUI
+  &kp TAB  &kp Q  &kp W     &kp E                       &kp R      &kp T        &kp Y                       &kp U      &kp I    &kp O     &kp P  &kp BACKSLASH
+ &kp LALT  &kp A  &kp S     &kp D                       &kp F      &kp G        &kp H                       &kp J      &kp K    &kp L  &kp SEMI       &kp APOS
+&kp LSHFT  &kp Z  &kp X     &kp C                       &kp V      &kp B        &kp N                       &kp M  &kp COMMA  &kp DOT  &kp FSLH      &kp RSHFT
+                         &kp LGUI  &lower_layer_f18_tap_dance  &kp LCTRL    &kp SPACE  &upper_layer_f19_tap_dance   &kp RGUI
             >;
         };
 
