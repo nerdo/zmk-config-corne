@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define LYR_DEFAULT 0
 #define LYR_LOWER 1
@@ -50,15 +50,26 @@
         };
     };
 
+    behaviors {
+        lower_layer_f24_tap_dance: lower_layer_f24_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOWER_LAYER_F24_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings =
+                <&mo 1>,
+                <&kp F24>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-  &kp TAB  &kp Q  &kp W     &kp E  &kp R      &kp T        &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BACKSLASH
- &kp LALT  &kp A  &kp S     &kp D  &kp F      &kp G        &kp H  &kp J      &kp K    &kp L  &kp SEMI       &kp APOS
-&kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH      &kp RSHFT
-                         &kp LGUI  &mo 1  &kp LCTRL    &kp SPACE  &mo 2   &kp RGUI
+  &kp TAB  &kp Q  &kp W     &kp E                       &kp R      &kp T        &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BACKSLASH
+ &kp LALT  &kp A  &kp S     &kp D                       &kp F      &kp G        &kp H  &kp J      &kp K    &kp L  &kp SEMI       &kp APOS
+&kp LSHFT  &kp Z  &kp X     &kp C                       &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH      &kp RSHFT
+                         &kp LGUI  &lower_layer_f24_tap_dance  &kp LCTRL    &kp SPACE  &mo 2   &kp RGUI
             >;
         };
 
