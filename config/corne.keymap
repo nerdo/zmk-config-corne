@@ -95,7 +95,7 @@
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7     &kp N8     &kp N9      &kp N0   &kp BACKSPACE
 &kp ESC    &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT   &kp F10  &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &m_prev   &kp UNDER  &kp COMMA  &kp PERIOD  &m_next  &kp ENTER
-                           &trans  &mo 3   &trans    &trans    &trans     &trans
+                           &trans  &trans  &trans    &trans    &trans     &trans
             >;
         };
 
@@ -119,10 +119,10 @@
 
         upper_left_hand_game_layer {
             bindings = <
-&kp GRAVE  &kp N1    &kp N2  &kp N3      &kp N4      &kp N5          &kp N6    &kp N7     &kp N8     &kp N9      &kp N0   &kp BACKSPACE
-&kp ESC    &trans    &trans  &trans      &trans      &kp C_VOL_UP    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT   &kp F10  &trans
-&trans     &kp C_PP  &trans  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN    &m_prev   &kp UNDER  &kp COMMA  &kp PERIOD  &m_next  &kp ENTER
-                             &trans      &trans      &trans          &trans    &trans     &trans
+&kp GRAVE  &kp N1    &kp N2  &kp N3  &kp N4  &kp N5          &kp N6    &kp N7     &kp N8     &kp N9      &kp N0   &kp BACKSPACE
+&kp ESC    &trans    &trans  &trans  &trans  &kp C_VOL_UP    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT   &kp F10  &trans
+&trans     &kp C_PP  &trans  &trans  &trans  &kp C_VOL_DN    &m_prev   &kp UNDER  &kp COMMA  &kp PERIOD  &m_next  &kp ENTER
+                             &trans  &trans  &trans          &trans    &trans     &trans
             >;
         };
     };
