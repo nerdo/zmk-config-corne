@@ -55,9 +55,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LOWER_LAYER_F18_TAP_DANCE";
             #binding-cells = <0>;
-            bindings =
-                <&mo 1>,
-                <&kp F18>;
+            bindings = <&mo 1>, <&kp F18>;
 
             tapping-term-ms = <125>;
         };
@@ -65,9 +63,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "UPPER_LAYER_F19_TAP_DANCE";
             #binding-cells = <0>;
-            bindings =
-                <&mo 2>,
-                <&kp F19>;
+            bindings = <&mo 2>, <&kp F19>;
 
             tapping-term-ms = <125>;
         };
@@ -87,25 +83,25 @@
 
         lower_layer {
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS          &kp ASTERISK       &kp LPAR   &kp RPAR   &kp DELETE
-&kp ESC    &kp F9    &trans  &trans     &trans      &trans         &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL  &trans
-&trans     &trans    &trans  &trans     &trans      &trans         &trans     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER  &kp PLUS   &trans
-                             &trans     &trans      &trans         &trans     &trans            &trans
+&kp TILDE  &kp EXCL          &kp AT  &kp POUND   &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPS          &kp ASTERISK       &kp LPAR   &kp RPAR   &kp DELETE
+&kp ESC    &kp F9            &trans  &trans      &trans      &kp C_VOL_UP    &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL  &trans
+&trans     &kp C_PLAY_PAUSE  &trans  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN    &trans     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER  &kp PLUS   &trans
+                                     &trans      &trans      &trans          &trans     &trans            &trans
             >;
         };
 
         upper_layer {
             bindings = <
-&kp GRAVE  &kp N1    &kp N2  &kp N3  &kp N4  &kp N5          &kp N6    &kp N7     &kp N8     &kp N9      &kp N0   &kp BACKSPACE
-&kp ESC    &trans    &trans  &trans  &trans  &kp C_VOL_UP    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT   &kp F10  &trans
-&trans     &kp C_PP  &trans  &trans  &trans  &kp C_VOL_DN    &m_prev   &kp UNDER  &kp COMMA  &kp PERIOD  &m_next  &kp ENTER
-                             &trans  &trans  &trans          &trans    &trans     &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7     &kp N8     &kp N9      &kp N0   &kp BACKSPACE
+&kp ESC    &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT   &kp F10  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &m_prev   &kp UNDER  &kp COMMA  &kp PERIOD  &m_next  &kp ENTER
+                           &trans  &trans  &trans    &trans    &trans     &trans
             >;
         };
 
         system_layer {
             bindings = <
-&to 4    &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6      &kp F7   &kp F8       &kp F9   &kp F10  &trans
+&to 4     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6      &kp F7   &kp F8       &kp F9   &kp F10  &trans
 &trans    &kp F11       &kp F12       &kp F13       &kp F14       &kp F15         &kp F16     &kp F17  &kp F18      &kp F19  &kp F20  &trans
 &kp CAPS  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &trans   &trans       &trans   &trans   &caps_word
                                       &bootloader   &trans        &sys_reset      &sys_reset  &trans   &bootloader
@@ -114,10 +110,10 @@
 
         left_hand_game_layer {
             bindings = <
-  &kp TAB  &kp Q  &kp W     &kp E                       &kp R      &kp T        &kp Y                       &kp U      &kp I    &kp O     &kp P  &kp BACKSLASH
- &kp LALT  &kp A  &kp S     &kp D                       &kp F      &kp G        &kp H                       &kp J      &kp K    &kp L  &kp SEMI       &kp APOS
-&kp LSHFT  &kp Z  &kp X     &kp C                       &kp V      &kp B        &kp N                       &kp M  &kp COMMA  &kp DOT  &kp FSLH      &kp RSHFT
-                         &kp J  &kp K  &kp LCTRL    &kp SPACE  &mo 5     &to 0
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSLASH
+&kp LALT   &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp J  &kp K  &kp LCTRL    &kp SPACE  &mo 5  &to 0
             >;
         };
 
