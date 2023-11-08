@@ -55,12 +55,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            require-prior-idle-ms = <400>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <300>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            retro-tap;
         };
         lower_layer_f18_tap_dance: lower_layer_f18_tap_dance {
             compatible = "zmk,behavior-tap-dance";
