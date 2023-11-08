@@ -13,6 +13,10 @@
 #define LYR_UPPER 2
 #define LYR_SYSTEM 3
 
+&mt {
+    tapping-term-ms = <400>;
+};
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
 };
