@@ -38,6 +38,7 @@
                 <&macro_release>,
                 <&kp RC(TAB)>;
         };
+
         m_prev: m_prev {
             label = "M_PREV";
             compatible = "zmk,behavior-macro";
@@ -56,11 +57,12 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <0>;
+            require-prior-idle-ms = <125>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
         lower_layer_f18_tap_dance: lower_layer_f18_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "LOWER_LAYER_F18_TAP_DANCE";
@@ -69,6 +71,7 @@
 
             tapping-term-ms = <125>;
         };
+
         upper_layer_f19_tap_dance: upper_layer_f19_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "UPPER_LAYER_F19_TAP_DANCE";
