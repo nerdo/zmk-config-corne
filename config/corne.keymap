@@ -52,6 +52,7 @@
     behaviors {
         lhm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             label = "LEFT_HAND_HOMEROW_MODS";
             flavor = "tap-unless-interrupted";
             require-prior-idle-ms = <125>;
@@ -69,6 +70,7 @@
 
         rhm: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             label = "RIGHT_HAND_HOMEROW_MODS";
             flavor = "tap-unless-interrupted";
             require-prior-idle-ms = <125>;
