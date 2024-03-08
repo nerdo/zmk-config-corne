@@ -55,12 +55,12 @@
             #binding-cells = <2>;
             label = "LEFT_HAND_HOMEROW_MODS";
             flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <200>;
             tapping-term-ms = <150>;
             quick-tap-ms = <85>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41 16 15 14 13>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41 13 14 15 16>;
 
             // right-hand keys + thumb cluster
         };
@@ -70,7 +70,7 @@
             #binding-cells = <2>;
             label = "RIGHT_HAND_HOMEROW_MODS";
             flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <200>;
             tapping-term-ms = <150>;
             quick-tap-ms = <85>;
             bindings = <&kp>, <&kp>;
