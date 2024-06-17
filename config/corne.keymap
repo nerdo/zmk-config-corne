@@ -118,8 +118,8 @@
         symbols_layer {
             bindings = <
 &trans  &kp EXCL   &kp AT   &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET      &kp AMPS          &kp ASTERISK       &kp LPAR   &kp RPAR   &trans
-&trans  &kp GRAVE  &kp TAB  &trans     &trans      &trans         &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL  &trans
-&trans  &trans     &trans   &trans     &trans      &trans         &kp ESC        &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER  &kp PLUS   &trans
+&trans  &kp GRAVE  &kp ESC  &trans     &kp TAB     &trans         &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL  &trans
+&trans  &trans     &trans   &trans     &trans      &trans         &kp DELETE     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER  &kp PLUS   &trans
                             &trans     &trans      &trans         &trans         &trans            &trans
             >;
         };
@@ -135,10 +135,10 @@
 
         right_alt {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans   &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &m_prev  &trans  &trans  &m_next  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp DELETE  &trans   &trans  &trans  &trans   &trans
-                        &trans  &trans  &trans    &trans      &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &m_prev  &trans  &trans  &m_next  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans  &trans  &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans   &trans
             >;
         };
 
