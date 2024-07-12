@@ -72,12 +72,12 @@
             label = "HELLDIVERS_PRECISION_STRIKE";
         };
 
-        helldivers_template: helldivers_supply_machine_gun {
+        helldivers_template: helldivers_template {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_wait_time 100>, <&kt B &kt B>;
 
-            label = "HELLDIVERS_SUPPLY_MACHINE_GUN";
+            label = "HELLDIVERS_TEMPLATE";
         };
 
         helldivers_supply_machine_gun: helldivers_supply_machine_gun {
