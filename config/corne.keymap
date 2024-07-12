@@ -47,7 +47,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 120>,
+                <&macro_wait_time 350>,
                 <&sk B &kp E &kp D &kp F &kp S &kp E>;
 
             label = "HELLDIVERS_MISSION_REINFORCE";
@@ -56,7 +56,7 @@
         helldivers_mission_resupply: helldivers_mission_resupply {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_wait_time 120>, <&sk B &kp D &kp D &kp E &kp F>;
+            bindings = <&macro_wait_time 350>, <&sk B &kp D &kp D &kp E &kp F>;
 
             label = "HELLDIVERS_MISSION_RESUPPLY";
         };
@@ -64,7 +64,7 @@
         helldivers_precision_strike: helldivers_precision_strike {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_wait_time 120>, <&sk B &kp F &kp F &kp E>;
+            bindings = <&macro_wait_time 350>, <&sk B &kp F &kp F &kp E>;
 
             label = "HELLDIVERS_PRECISION_STRIKE";
         };
