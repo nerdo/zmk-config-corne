@@ -94,7 +94,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             label = "LEFT_HAND_HOMEROW_MODS";
-            flavor = "tap-preferred";
+            flavor = "balanced";
             require-prior-idle-ms = <120>;
             tapping-term-ms = <180>;
             quick-tap-ms = <85>;
@@ -105,13 +105,14 @@
             // right-hand keys + thumb cluster
 
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         rhm: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             label = "RIGHT_HAND_HOMEROW_MODS";
-            flavor = "tap-preferred";
+            flavor = "balanced";
             require-prior-idle-ms = <120>;
             tapping-term-ms = <180>;
             quick-tap-ms = <85>;
@@ -122,6 +123,7 @@
             // left-hand keys + thumb cluster
 
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         symbols_layer_f18_tap_dance: symbols_layer_f18_tap_dance {
@@ -200,10 +202,10 @@
 
         right_alt {
             bindings = <
-&none  &none  &none  &none       &none   &none    &none  &m_prev  &m_next  &none  &none  &none
-&none  &none  &none  &caps_word  &none   &none    &none  &none    &none    &none  &none  &none
-&none  &none  &none  &none       &none   &none    &none  &none    &none    &none  &none  &none
-                     &trans      &trans  &none    &none  &trans   &trans
+&none  &none  &none  &none       &none   &none    &none     &m_prev        &m_next      &none    &none  &none
+&none  &none  &none  &caps_word  &none   &none    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &none  &none
+&none  &none  &none  &none       &none   &none    &none     &none          &none        &none    &none  &none
+                     &trans      &trans  &none    &none     &trans         &trans
             >;
         };
 
