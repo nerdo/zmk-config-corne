@@ -92,7 +92,7 @@
             label = "LEFT_HAND_HOMEROW_MODS";
             flavor = "balanced";
             require-prior-idle-ms = <85>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <350>;
             quick-tap-ms = <85>;
             bindings = <&kp>, <&kp>;
 
@@ -107,7 +107,7 @@
             label = "RIGHT_HAND_HOMEROW_MODS";
             flavor = "balanced";
             require-prior-idle-ms = <85>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <350>;
             quick-tap-ms = <85>;
             bindings = <&kp>, <&kp>;
 
