@@ -90,7 +90,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             label = "LEFT_HAND_HOMEROW_MODS";
-            flavor = "balanced";
+            flavor = "hold-preferred";
             require-prior-idle-ms = <125>;
             tapping-term-ms = <350>;
             quick-tap-ms = <125>;
@@ -105,7 +105,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             label = "RIGHT_HAND_HOMEROW_MODS";
-            flavor = "balanced";
+            flavor = "hold-preferred";
             require-prior-idle-ms = <125>;
             tapping-term-ms = <350>;
             quick-tap-ms = <125>;
