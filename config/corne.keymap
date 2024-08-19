@@ -125,6 +125,8 @@
             label = "RIGHT_SHIFT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
             bindings = <&kp RSHFT>, <&mo 4>, <&caps_word>;
+
+            tapping-term-ms = <300>;
         };
 
         left_shift_layer_tap_dance: left_shift_layer_tap_dance {
@@ -132,6 +134,8 @@
             label = "LEFT_SHIFT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&mo 3>, <&caps_word>;
+
+            tapping-term-ms = <300>;
         };
     };
 
