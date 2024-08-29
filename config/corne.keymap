@@ -153,46 +153,6 @@
             key-positions = <41 40 41>;
             layers = <0>;
         };
-
-        lctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <16 37>;
-        };
-
-        lshft {
-            bindings = <&kp LSHFT>;
-            key-positions = <15 37>;
-        };
-
-        lalt {
-            bindings = <&kp LALT>;
-            key-positions = <14 37>;
-        };
-
-        lgui {
-            bindings = <&kp LGUI>;
-            key-positions = <13 37>;
-        };
-
-        rctrl {
-            bindings = <&kp RCTRL>;
-            key-positions = <40 19>;
-        };
-
-        rshft {
-            bindings = <&kp RSHFT>;
-            key-positions = <20 40>;
-        };
-
-        ralt {
-            bindings = <&kp RALT>;
-            key-positions = <21 40>;
-        };
-
-        rgui {
-            bindings = <&kp RGUI>;
-            key-positions = <22 40>;
-        };
     };
 
     keymap {
