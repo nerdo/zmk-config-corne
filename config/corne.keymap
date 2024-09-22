@@ -124,7 +124,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_SHIFT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp RSHFT>, <&mo 4>, <&caps_word>;
+            bindings = <&kp RSHFT>, <&caps_word>, <&mo 4>;
 
             tapping-term-ms = <350>;
         };
@@ -133,7 +133,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_SHIFT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&mo 3>, <&caps_word>;
+            bindings = <&kp LSHFT>, <&caps_word>, <&mo 3>;
 
             tapping-term-ms = <350>;
         };
