@@ -124,7 +124,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_SHIFT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp RSHFT>, <&caps_word>, <&mo 4>;
+            bindings = <&kp RSHFT>, <&caps_word>;
 
             tapping-term-ms = <350>;
         };
@@ -133,9 +133,26 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_SHIFT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&caps_word>, <&mo 3>;
+            bindings = <&kp LSHFT>, <&caps_word>;
 
             tapping-term-ms = <350>;
+        };
+
+        left_layer_tap_dance: left_layer_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LEFT_LAYER_TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&mo 5>, <&mo 3>;
+
+            tapping-term-ms = <350>;
+        };
+
+        right_layer_tap_dance: right_layer_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_LAYER_TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&mo 2>, <&mo 4>;
         };
     };
 
@@ -163,7 +180,7 @@
 &none  &kp Q                     &kp W                     &kp E                        &kp R                      &kp T        &kp Y      &kp U                       &kp I                         &kp O                      &kp P                         &none
 &none  &left_homerow_mod LGUI A  &left_homerow_mod LALT S  &kp D                        &left_homerow_mod LCTRL F  &kp G        &kp H      &right_homerow_mod RCTRL J  &kp K                         &right_homerow_mod RALT L  &right_homerow_mod RGUI SEMI  &none
 &none  &kp Z                     &kp X                     &kp C                        &kp V                      &kp B        &kp N      &kp M                       &kp COMMA                     &kp DOT                    &kp FSLH                      &none
-                                                           &left_shift_layer_tap_dance  &mo 5                      &kp SPACE    &kp SPACE  &mo 2                       &right_shift_layer_tap_dance
+                                                           &left_shift_layer_tap_dance  &left_layer_tap_dance      &kp SPACE    &kp SPACE  &right_layer_tap_dance      &right_shift_layer_tap_dance
             >;
         };
 
