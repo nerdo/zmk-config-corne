@@ -126,7 +126,7 @@
             #binding-cells = <0>;
             bindings = <&kp RSHFT>, <&caps_word>;
 
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
         };
 
         left_shift_layer_tap_dance: left_shift_layer_tap_dance {
@@ -135,7 +135,7 @@
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&caps_word>;
 
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
         };
 
         left_layer_tap_dance: left_layer_tap_dance {
@@ -144,14 +144,14 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&mo 3>;
 
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
         };
 
         right_layer_tap_dance: right_layer_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <350>;
+            tapping-term-ms = <200>;
             bindings = <&mo 2>, <&mo 4>;
         };
     };
@@ -176,7 +176,7 @@
         compatible = "zmk,keymap";
 
         default {
-            display-name = "default";
+            display-name = "";
             bindings = <
 &none  &kp Q                     &kp W                     &kp E                        &kp R                      &kp T        &kp Y      &kp U                       &kp I                         &kp O                      &kp P                         &none
 &none  &left_homerow_mod LGUI A  &left_homerow_mod LALT S  &kp D                        &left_homerow_mod LCTRL F  &kp G        &kp H      &right_homerow_mod RCTRL J  &kp K                         &right_homerow_mod RALT L  &right_homerow_mod RGUI SEMI  &none
