@@ -176,6 +176,7 @@
         compatible = "zmk,keymap";
 
         default {
+            display-name = "default";
             bindings = <
 &none  &kp Q                     &kp W                     &kp E                        &kp R                      &kp T        &kp Y      &kp U                       &kp I                         &kp O                      &kp P                         &none
 &none  &left_homerow_mod LGUI A  &left_homerow_mod LALT S  &kp D                        &left_homerow_mod LCTRL F  &kp G        &kp H      &right_homerow_mod RCTRL J  &kp K                         &right_homerow_mod RALT L  &right_homerow_mod RGUI SEMI  &none
@@ -185,6 +186,7 @@
         };
 
         game {
+            display-name = "game";
             bindings = <
 &none  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P     &none
 &none  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &none
@@ -194,6 +196,7 @@
         };
 
         symbols {
+            display-name = "symbols";
             bindings = <
 &none  &kp EXCL   &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPS  &kp ASTERISK  &kp LPAR   &kp RPAR   &none
 &none  &kp GRAVE  &none   &none      &none       &none          &kp LEFT_ARROW  &kp DOWN  &kp UP        &kp RIGHT  &kp APOS   &none
@@ -203,6 +206,7 @@
         };
 
         left_alt {
+            display-name = "left alt";
             bindings = <
 &none  &none             &none  &none       &none       &none           &none  &none   &none   &none  &none  &none
 &none  &none             &none  &none       &none       &kp C_VOL_UP    &none  &none   &none   &none  &none  &none
@@ -212,6 +216,7 @@
         };
 
         right_alt {
+            display-name = "right alt";
             bindings = <
 &none  &none  &none  &none   &none   &none    &none     &m_prev    &m_next    &none    &none  &none
 &none  &none  &none  &none   &none   &none    &none     &none      &none      &none    &none  &none
@@ -221,6 +226,7 @@
         };
 
         numbers {
+            display-name = "numbers";
             bindings = <
 &none  &kp N1   &kp N2  &kp N3  &kp N4   &kp N5    &kp N6         &kp N7            &kp N8             &kp N9     &kp N0     &none
 &none  &kp ESC  &none   &none   &kp TAB  &none     &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL  &none
@@ -230,6 +236,7 @@
         };
 
         system {
+            display-name = "system";
             bindings = <
 &none  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6      &kp F7   &kp F8      &kp F9   &kp F10  &none
 &none  &kp F11       &kp F12       &kp F13       &kp F14       &kp F15         &kp F16     &kp F17  &kp F18     &kp F19  &kp F20  &none
