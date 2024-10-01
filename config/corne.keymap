@@ -126,7 +126,7 @@
             #binding-cells = <0>;
             bindings = <&kp RSHFT>, <&caps_word>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         left_shift_layer_tap_dance: left_shift_layer_tap_dance {
@@ -135,7 +135,7 @@
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&caps_word>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         left_layer_tap_dance: left_layer_tap_dance {
@@ -144,14 +144,14 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&mo 3>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         right_layer_tap_dance: right_layer_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&mo 2>, <&mo 4>;
         };
     };
