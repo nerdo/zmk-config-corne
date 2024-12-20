@@ -91,8 +91,8 @@
             #binding-cells = <2>;
             label = "LEFT_HOMEROW_MOD";
             flavor = "balanced";
-            require-prior-idle-ms = <125>;
-            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
 
@@ -108,8 +108,8 @@
             #binding-cells = <2>;
             label = "RIGHT_HOMEROW_MOD";
             flavor = "balanced";
-            require-prior-idle-ms = <125>;
-            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
 
@@ -126,7 +126,7 @@
             #binding-cells = <0>;
             bindings = <&kp RSHFT>, <&caps_word>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <350>;
         };
 
         left_shift_layer_tap_dance: left_shift_layer_tap_dance {
@@ -135,7 +135,7 @@
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&caps_word>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <350>;
         };
 
         left_layer_tap_dance: left_layer_tap_dance {
@@ -144,14 +144,14 @@
             #binding-cells = <0>;
             bindings = <&mo 5>, <&mo 3>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <350>;
         };
 
         right_layer_tap_dance: right_layer_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_LAYER_TAP_DANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <350>;
             bindings = <&mo 2>, <&mo 4>;
         };
     };
