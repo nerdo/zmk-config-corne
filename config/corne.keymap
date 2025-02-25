@@ -167,7 +167,7 @@
 
         right_globe {
             bindings = <&kp GLOBE>;
-            key-positions = <41 40 41>;
+            key-positions = <40 41>;
             layers = <0>;
         };
     };
@@ -249,9 +249,9 @@
 
         system {
             bindings = <
-&none  &none         &none         &none         &none         &none           &none       &none  &none       &none  &none  &none
-&none  &to 0         &none         &none         &none         &none           &none       &none  &none       &none  &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &none  &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none           &none       &none  &none       &none  &none           &none
+&none  &to 0         &none         &none         &none         &none           &none       &none  &none       &none  &none           &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &none  &none       &none  &studio_unlock  &none
                                    &bootloader   &none         &none           &none       &none  &sys_reset
             >;
 
